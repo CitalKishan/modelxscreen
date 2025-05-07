@@ -2,7 +2,7 @@ import { router } from "expo-router";
 import { Text, TouchableOpacity, View } from "react-native";
 
 const Screen3 = () => {
-  console.log("----->     Screen3");
+  console.log("----->     Rendering Screen3");
   return (
     <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
       <TouchableOpacity

@@ -2,7 +2,7 @@ import { router } from "expo-router";
 import { Text, TouchableOpacity, View } from "react-native";
 
 export default function Index() {
-  console.log("----->     Index");
+  console.log("----->     Rendering Index screen");
   return (
     <View
       style={{
