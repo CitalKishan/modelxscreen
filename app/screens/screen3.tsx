@@ -7,8 +7,8 @@ const Screen3 = () => {
     <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
       <TouchableOpacity
         onPress={() => {
-          router.replace("/");
           console.log("----->     Back button pressed in Screen 3");
+          router.replace("/");
         }}
         style={{
           borderWidth: 1,

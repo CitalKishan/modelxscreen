@@ -6,7 +6,10 @@ const Screen1 = () => {
   return (
     <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
       <TouchableOpacity
-        onPress={() => router.replace("/")}
+        onPress={() => {
+          console.log("----->     Back button pressed in Screen 1");
+          router.replace("/");
+        }}
         style={{
           borderWidth: 1,
           borderColor: "black",
