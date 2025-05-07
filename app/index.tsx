@@ -12,7 +12,10 @@ export default function Index() {
       }}
     >
       <TouchableOpacity
-        onPress={() => router.push("./screens/screen1")}
+        onPress={() => {
+          console.log("----->     Go to Screen 1 pressed");
+          router.push("./screens/screen1");
+        }}
         style={{
           borderWidth: 1,
           borderColor: "black",
@@ -22,7 +25,10 @@ export default function Index() {
         <Text>Go to Screen 1</Text>
       </TouchableOpacity>
       <TouchableOpacity
-        onPress={() => router.push("./screens/screen2")}
+        onPress={() => {
+          console.log("----->     Go to Screen 2 pressed");
+          router.push("./screens/screen2");
+        }}
         style={{
           borderWidth: 1,
           borderColor: "black",
@@ -34,7 +40,10 @@ export default function Index() {
         <Text>Go to Screen 2</Text>
       </TouchableOpacity>
       <TouchableOpacity
-        onPress={() => router.push("./screens/screen3")}
+        onPress={() => {
+          console.log("----->     Go to Screen 3 pressed");
+          router.push("./screens/screen3");
+        }}
         style={{
           borderWidth: 1,
           borderColor: "black",
