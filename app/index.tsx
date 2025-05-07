@@ -1,6 +1,8 @@
-import { Text, View } from "react-native";
+import { router } from "expo-router";
+import { Text, TouchableOpacity, View } from "react-native";
 
 export default function Index() {
+  console.log("----->     Index");
   return (
     <View
       style={{
@@ -9,7 +11,38 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
+      <TouchableOpacity
+        onPress={() => router.push("./screens/screen1")}
+        style={{
+          borderWidth: 1,
+          borderColor: "black",
+          padding: 10,
+        }}
+      >
+        <Text>Go to Screen 1</Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={() => router.push("./screens/screen2")}
+        style={{
+          borderWidth: 1,
+          borderColor: "black",
+          padding: 10,
+          marginTop: 10,
+          marginBottom: 10,
+        }}
+      >
+        <Text>Go to Screen 2</Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={() => router.push("./screens/screen3")}
+        style={{
+          borderWidth: 1,
+          borderColor: "black",
+          padding: 10,
+        }}
+      >
+        <Text>Go to Screen 3</Text>
+      </TouchableOpacity>
     </View>
   );
 }
