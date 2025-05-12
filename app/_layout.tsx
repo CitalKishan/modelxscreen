@@ -22,10 +22,30 @@ export default function RootLayout() {
         }}
       />
       <Tabs.Screen
-        name="screens"
+        name="screens/screen1"
         options={{
           headerShown: false,
-          title: "Screens",
+          title: "Screen 1",
+          tabBarIcon: () => null,
+          tabBarIconStyle: { height: 0 },
+          href: null,
+        }}
+      />
+      <Tabs.Screen
+        name="screens/screen2"
+        options={{
+          headerShown: false,
+          title: "Screen 2",
+          tabBarIcon: () => null,
+          tabBarIconStyle: { height: 0 },
+          href: null,
+        }}
+      />
+      <Tabs.Screen
+        name="screens/screen3"
+        options={{
+          headerShown: false,
+          title: "Screen 3",
           tabBarIcon: () => null,
           tabBarIconStyle: { height: 0 },
           href: null,
