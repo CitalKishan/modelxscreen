@@ -18,7 +18,10 @@ const Modal = () => {
       }}
     >
       <TouchableOpacity
-        onPress={() => setModal1Visible(true)}
+        onPress={() => {
+          setModal1Visible(true);
+          console.log("Modal 1 Visible");
+        }}
         style={{
           backgroundColor: "#2196F3",
           paddingVertical: 12,
@@ -38,7 +41,10 @@ const Modal = () => {
         </Text>
       </TouchableOpacity>
       <TouchableOpacity
-        onPress={() => setModal2Visible(true)}
+        onPress={() => {
+          setModal2Visible(true);
+          console.log("Modal 2 Visible");
+        }}
         style={{
           backgroundColor: "#2196F3",
           paddingVertical: 12,
@@ -58,7 +64,10 @@ const Modal = () => {
         </Text>
       </TouchableOpacity>
       <TouchableOpacity
-        onPress={() => setModal3Visible(true)}
+        onPress={() => {
+          setModal3Visible(true);
+          console.log("Modal 3 Visible");
+        }}
         style={{
           backgroundColor: "#2196F3",
           paddingVertical: 12,
@@ -78,9 +87,27 @@ const Modal = () => {
         </Text>
       </TouchableOpacity>
 
-      <Modal1 visible={modal1Visible} onClose={() => setModal1Visible(false)} />
-      <Modal2 visible={modal2Visible} onClose={() => setModal2Visible(false)} />
-      <Modal3 visible={modal3Visible} onClose={() => setModal3Visible(false)} />
+      <Modal1
+        visible={modal1Visible}
+        onClose={() => {
+          setModal1Visible(false);
+          console.log("Modal 1 Closed");
+        }}
+      />
+      <Modal2
+        visible={modal2Visible}
+        onClose={() => {
+          setModal2Visible(false);
+          console.log("Modal 2 Closed");
+        }}
+      />
+      <Modal3
+        visible={modal3Visible}
+        onClose={() => {
+          setModal3Visible(false);
+          console.log("Modal 3 Closed");
+        }}
+      />
     </View>
   );
 };
