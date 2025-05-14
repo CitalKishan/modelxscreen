@@ -13,10 +13,10 @@ export default function RootLayout() {
         }}
       />
       <Tabs.Screen
-        name="model"
+        name="modal"
         options={{
           headerShown: false,
-          title: "Model",
+          title: "Modal",
           tabBarIcon: () => null,
           tabBarIconStyle: { height: 0 },
         }}
