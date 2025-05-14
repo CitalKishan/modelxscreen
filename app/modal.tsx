@@ -6,8 +6,25 @@ const Modal = () => {
   const [modalVisible, setModalVisible] = useState(false);
   return (
     <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <TouchableOpacity onPress={() => setModalVisible(true)}>
-        <Text>Open Modal 1</Text>
+      <TouchableOpacity
+        onPress={() => setModalVisible(true)}
+        style={{
+          backgroundColor: "#2196F3",
+          paddingVertical: 12,
+          paddingHorizontal: 20,
+          borderRadius: 8,
+          elevation: 3,
+          shadowColor: "#000",
+          shadowOffset: { width: 0, height: 2 },
+          shadowOpacity: 0.25,
+          shadowRadius: 3.84,
+        }}
+      >
+        <Text
+          style={{ color: "white", fontWeight: "bold", textAlign: "center" }}
+        >
+          Open Modal 1
+        </Text>
       </TouchableOpacity>
       <Modal1 visible={modalVisible} onClose={() => setModalVisible(false)} />
     </View>
