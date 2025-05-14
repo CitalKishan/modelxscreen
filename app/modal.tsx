@@ -5,7 +5,9 @@ import Modal2 from "../modals/modal2";
 import Modal3 from "../modals/modal3";
 const Modal = () => {
   console.log("Rendering Modal Screen");
-  const [modalVisible, setModalVisible] = useState(false);
+  const [modal1Visible, setModal1Visible] = useState(false);
+  const [modal2Visible, setModal2Visible] = useState(false);
+  const [modal3Visible, setModal3Visible] = useState(false);
   return (
     <View
       style={{
@@ -16,7 +18,7 @@ const Modal = () => {
       }}
     >
       <TouchableOpacity
-        onPress={() => setModalVisible(true)}
+        onPress={() => setModal1Visible(true)}
         style={{
           backgroundColor: "#2196F3",
           paddingVertical: 12,
@@ -36,7 +38,7 @@ const Modal = () => {
         </Text>
       </TouchableOpacity>
       <TouchableOpacity
-        onPress={() => setModalVisible(true)}
+        onPress={() => setModal2Visible(true)}
         style={{
           backgroundColor: "#2196F3",
           paddingVertical: 12,
@@ -56,7 +58,7 @@ const Modal = () => {
         </Text>
       </TouchableOpacity>
       <TouchableOpacity
-        onPress={() => setModalVisible(true)}
+        onPress={() => setModal3Visible(true)}
         style={{
           backgroundColor: "#2196F3",
           paddingVertical: 12,
@@ -76,9 +78,9 @@ const Modal = () => {
         </Text>
       </TouchableOpacity>
 
-      <Modal1 visible={modalVisible} onClose={() => setModalVisible(false)} />
-      <Modal2 visible={modalVisible} onClose={() => setModalVisible(false)} />
-      <Modal3 visible={modalVisible} onClose={() => setModalVisible(false)} />
+      <Modal1 visible={modal1Visible} onClose={() => setModal1Visible(false)} />
+      <Modal2 visible={modal2Visible} onClose={() => setModal2Visible(false)} />
+      <Modal3 visible={modal3Visible} onClose={() => setModal3Visible(false)} />
     </View>
   );
 };
